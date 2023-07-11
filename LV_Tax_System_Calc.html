@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latvian Tax Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Latvian Tax Calculator</h1>
+    <label for="grossSalary">Gross Salary (EUR/month):</label>
+    <input type="text" id="grossSalary">
+
+    <div class="button-container">
+      <button onclick="calculate()">Calculate</button>
+      <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <div class="results">
+      <h2>Results:</h2>
+      <label for="socialTax">Social Tax (EUR/month):</label>
+      <input type="text" id="socialTax" readonly>
+      <label for="healthInsurance">Health Insurance (EUR/month):</label>
+      <input type="text" id="healthInsurance" readonly>
+      <label for="personalIncomeTax">Personal Income Tax (EUR/month):</label>
+      <input type="text" id="personalIncomeTax" readonly>
+      <label for="netSalary">Net Salary (EUR/month):</label>
+      <input type="text" id="netSalary" readonly>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
